@@ -1,10 +1,6 @@
 import m from 'mithril';
-import 'semantic-ui-css/semantic.min.css';
+import App from './App';
 
-class App {
-    view() {
-        return m("h2", "hello world");
-    }
-}
+import 'semantic-ui-css/semantic.min.css';
 
 m.mount(document.body, App);

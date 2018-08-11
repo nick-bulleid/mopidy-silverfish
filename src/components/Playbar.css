@@ -1,0 +1,5 @@
+.playbar {
+    grid-area: playbar;
+
+    background-color: red;
+}

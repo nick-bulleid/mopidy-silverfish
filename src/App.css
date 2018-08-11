@@ -1,0 +1,11 @@
+.app {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+
+    grid-template: 
+                "sidebar header" 50px
+                "sidebar main" auto
+                "playbar playbar" 150px / 250px auto
+}
