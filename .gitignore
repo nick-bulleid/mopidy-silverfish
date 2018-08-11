@@ -1,0 +1,9 @@
+*.egg-info
+*.pyc
+.coverage
+.pytest_cache/
+.tox/
+MANIFEST
+node_modules/
+build/
+dist/

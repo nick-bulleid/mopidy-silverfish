@@ -1,0 +1,62 @@
+****************************
+Mopidy-Silverfish
+****************************
+
+.. image:: https://img.shields.io/pypi/v/Mopidy-Silverfish.svg?style=flat
+    :target: https://pypi.python.org/pypi/Mopidy-Silverfish/
+    :alt: Latest PyPI version
+
+.. image:: https://img.shields.io/travis/nick-bulleid/mopidy-silverfish/master.svg?style=flat
+    :target: https://travis-ci.org/nick-bulleid/mopidy-silverfish
+    :alt: Travis CI build status
+
+.. image:: https://img.shields.io/coveralls/nick-bulleid/mopidy-silverfish/master.svg?style=flat
+   :target: https://coveralls.io/r/nick-bulleid/mopidy-silverfish
+   :alt: Test coverage
+
+Mopidy web extension
+
+
+Installation
+============
+
+Install by running::
+
+    pip install Mopidy-Silverfish
+
+Or, if available, install the Debian/Ubuntu package from `apt.mopidy.com
+<http://apt.mopidy.com/>`_.
+
+
+Configuration
+=============
+
+Before starting Mopidy, you must add configuration for
+Mopidy-Silverfish to your Mopidy configuration file::
+
+    [silverfish]
+    # TODO: Add example of extension config
+
+
+Project resources
+=================
+
+- `Source code <https://github.com/nick-bulleid/mopidy-silverfish>`_
+- `Issue tracker <https://github.com/nick-bulleid/mopidy-silverfish/issues>`_
+
+
+Credits
+=======
+
+- Original author: `Nick Bulleid <https://github.com/nick-bulleid`__
+- Current maintainer: `Nick Bulleid <https://github.com/nick-bulleid`__
+- `Contributors <https://github.com/nick-bulleid/mopidy-silverfish/graphs/contributors>`_
+
+
+Changelog
+=========
+
+v0.1.0 (UNRELEASED)
+----------------------------------------
+
+- Initial release.
