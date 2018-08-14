@@ -3,6 +3,6 @@ import './main.css'
 
 export default {
     view: function () {
-        return m("div.main");
+        return m(".main");
     }
 };
