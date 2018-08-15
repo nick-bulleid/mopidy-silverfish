@@ -7,5 +7,5 @@
     grid-template: 
                 "sidebar header" 50px
                 "sidebar main" auto
-                "playbar playbar" 150px / 250px auto
+                "playbar playbar" fit-content(150px) / 250px auto
 }
