@@ -22,7 +22,7 @@ export default {
         m(".ui.menu.vertical.secondary.fluid", [
           m(".item", [
             m("h2.ui.header", [
-              m("i.icon.music.teal"),
+              m("i.icon.music.blue"),
               "Mopidy"
             ])
           ]),
