@@ -1,7 +1,7 @@
 .playbar {
     grid-area: playbar;
 
-    background-color: lightgrey;
+    background-color: whitesmoke;
 }
 
 .controls {
@@ -16,4 +16,39 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.ui.grid > .slim.row {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.track-progress {
+    position: relative;
+
+    height: 10px;
+    width: 100%;
+}
+
+.track-progress > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+.track-progress > input[type="range"] {
+    cursor: pointer;
+    opacity: 0;
+}
+
+progress {
+    background: transparent;
+    border: 1px solid white;
+}
+
+::-moz-progress-bar {
+    background-color: white;
 }
