@@ -4,14 +4,20 @@ import './sidebar.css';
 
 var SubMenu = {
   view: function(vnode) {
-    return m(".item", [
-      m(".header", vnode.attrs.name),
-      m(".menu", [
-        vnode.attrs.items.map(function (node) {
-          return m("a.item", node.name);
-        })
-      ])
-    ])
+    let children = [];
+    children.push(m(".header", vnode.attrs.name));
+
+    if (vnode.attrs.items) {
+      children.push(
+        m(".menu", [
+          vnode.attrs.items.map(function (node) {
+            return m("a.item", node.name);
+          })
+        ])
+      );
+    }
+
+    return m(".item", children);
   }
 }
 
@@ -33,7 +39,7 @@ export default {
             ])
           ]),
           m("a.item.header", "Now Playing"),
-          m(SubMenu, { name: "Browse", items: State.browseList }),
+          m(SubMenu, { name: "Browse", items: State.mopidy.browseRoot }),
           m(SubMenu, { name: "Playlists", items: State.playlists}),
           m("a.item.header", "Settings"),
         ])

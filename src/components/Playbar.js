@@ -1,5 +1,19 @@
 import m from 'mithril';
+import {State} from '../Global';
+
 import './playbar.css';
+
+let TrackDisplay = {
+    view(vnode) {
+        let children = [];
+        if (vnode.attrs.track)
+        {
+            children.push(vnode.attrs.track.name);
+            children.push(m(".sub.header.truncate", "by " + vnode.attrs.track.artists[0].name + " from " + vnode.attrs.track.album.name))
+        }
+        return m("h1.ui.header.truncate.blue", children);
+    }
+}
 
 let TrackProgress = {
 
@@ -32,10 +46,7 @@ export default {
                         ])
                     ),
                     m(".stretch.column.left.aligned", [
-                        m("h1.ui.header.truncate.blue", [
-                            "Track Title",
-                            m(".sub.header.truncate", "by Artist from Album")
-                        ])
+                        m(TrackDisplay, { track: State.mopidy.currentTrack })
                     ])
                 ]),
                 m(".slim.row.centered.blue", [
